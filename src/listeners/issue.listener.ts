@@ -5,9 +5,9 @@ class IssueListener {
   app: Probot;
   constructor(app: Probot) {
     this.app = app;
-    this.initListener();
+    this.init();
   }
-  initListener = (): void => {
+  init = (): void => {
     this.app.on("issues.opened", issueActions.sendComment);
   };
 }

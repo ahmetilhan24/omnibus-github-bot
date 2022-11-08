@@ -3,5 +3,5 @@ import Bot from "./bot";
 
 export = (app: Probot) => {
   const bot = new Bot(app);
-  bot.initBot();
+  bot.init();
 };

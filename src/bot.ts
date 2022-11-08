@@ -7,12 +7,12 @@ class Bot {
   constructor(app: Probot) {
     this.app = app;
   }
-  listen = () => {
+  listen = (): void => {
     listeners(this.app);
   };
-  initBot = () => {
+  init = (): void => {
     this.listen();
   };
 }
 
-export default Bot
+export default Bot;
