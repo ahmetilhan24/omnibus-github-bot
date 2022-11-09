@@ -7,6 +7,9 @@ class IssueActions {
     });
     await context.octokit.issues.createComment(issueComment);
   };
+  closeOldIssue = (context: Context) => {
+    console.log(context);
+  };
 }
 
 export default new IssueActions();
